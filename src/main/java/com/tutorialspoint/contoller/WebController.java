@@ -12,13 +12,13 @@ public class WebController {
         return "index";
     }
 
-    @RequestMapping(value = "/redirect", method = RequestMethod.GET)
+    @RequestMapping(value = "/staticPage", method = RequestMethod.GET)
     public String redirect() {
-        return "redirect:finalPage";
+        return "redirect:/pages/final.htm";
     }
 
-    @RequestMapping(value = "/finalPage", method = RequestMethod.GET)
-    public String finalPage() {
-        return "final";
-    }
+//    @RequestMapping(value = "/finalPage", method = RequestMethod.GET)
+//    public String finalPage() {
+//        return "final";
+//    }
 }
